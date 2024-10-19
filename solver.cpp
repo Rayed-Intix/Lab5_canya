@@ -37,13 +37,12 @@ void solver::MinMax27() {
                 length = temp_len;
                 pos = temp_pos;
             }
-            prev = curr;
         }
         if (curr != prev) {
             temp_len = 1;
             temp_pos = i + 1;
-            prev = curr;
         }
+        prev = curr;
     }
     cout << "Number of the First Element of Longest Series : " << pos << endl;
     cout << "Length of longest Series : " << length << endl;
